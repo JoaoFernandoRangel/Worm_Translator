@@ -32,6 +32,7 @@ with open(output_path, "w+", encoding="utf-8") as arquivo:
         html = html_bytes.decode("utf-8")
         arquivo.write(html)
         arquivo.write("\n\n")  # Adiciona uma quebra de linha entre cada HTML para clareza
+        print(counter)
 
 fim = time.time()
 print(f"Tempo total: {fim-inicio} segundos")
